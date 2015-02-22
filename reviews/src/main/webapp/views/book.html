@@ -1,0 +1,62 @@
+<div style="padding-top: 25px">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<table style="width: 100%"><tr><td style="width: 90%"><h3 class="panel-title">{{book.name}} Details</h3></td><td style="allign: right"><h3 class="panel-title"><a href="" ng-click="showDetails = ! showDetails">+Comment</a></h3></td></tr></table>
+		</div>
+		<div class="panel-body">
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<table class="table table-stripped">
+								<tbody>
+									<tr>
+										<td>Name</td>
+										<td>{{book.name}}</td>
+									</tr>
+									<tr>
+										<td>Author</td>
+										<td>{{book.author}}</td>
+									</tr>
+									<tr>
+										<td>Publication Year</td>
+										<td>{{book.publicationYear}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="align: left; padding-left: 20px">
+							<div ng-show="showDetails">
+								<form class="form-horizontal ng-pristine ng-invalid ng-invalid-required" role="form" ng-submit="createNewComment()">
+									<div>
+										<label>New comment</label>
+										<div>
+											<textarea class="form-control ng-pristine ng-invalid ng-invalid-required" name="comment" ng-model="comment" required="" rows="4" cols="50"></textarea>
+										</div>
+										<div>
+											<div style="padding-top: 5px">
+												<input type="submit" value="Add Comment" class="btn btn-primary">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</td>	
+					</tr>
+					<tr>
+						<td >Comments:</td>
+					</tr>
+					<tr>
+						<td>
+							<ul ng-repeat="comment in book.commentList">
+								<li>{{comment.comment}}</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

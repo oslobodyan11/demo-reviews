@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- AppName goes here -->
+<html ng-app="reviewsApp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Library Reviews DEMO - Single Page Application (SPA)</title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-route.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-resource.js"></script>
+<script src="/js/ui-bootstrap-tpls-0.9.0.min.js"></script>
+<script src="/js/spa_reviews.js"></script>
+
+</head>
+<!-- Controller name goes here -->
+<body>
+	
+<div class="container">
+	<table style="width: 100%">
+		<tr>
+			<td style="width: 15%; vertical-align: top; padding-top: 30px">
+				<div class="list-group">
+					<a href="#" class="list-group-item active">Home</a>
+					<a href="#reviews/library" class="list-group-item">Library</a>
+					<a href="#reviews/newbook" class="list-group-item">New book</a>
+				</div>
+			</td>
+			<td style="width: 85%; vertical-align: top; padding-left: 20px; padding-top: 5px">
+				<div ng-view></div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>

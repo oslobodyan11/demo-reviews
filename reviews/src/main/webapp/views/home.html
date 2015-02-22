@@ -1,0 +1,33 @@
+	<div class="page-header" style="margin: 0">
+		<h1>Demo Library Reviews App - Single Page Application with Spring RESTful backend</h1>
+	</div>
+	<div style="padding-top: 10px">
+		<div style="padding-bottom: 30px">
+			Here is the home page of DEMO Library Reviews application. There are few menu links on
+			the side navigation. Click on the links is loading the corresponding content to the main rendering area.
+			All interactions between client and server are implemented with AngularJS and
+			RESTFull web services. For the DEMO no data is stored in the database.
+		</div>
+		<!--
+							Different views will be loaded based on the routes 
+							 -->
+		<div style="padding-top: 20px">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Implementation Notes</h3>
+				</div>
+				<div class="panel-body">
+					<ul>
+						<li>Home Page Link loads this page</li>
+						<li>Library Link retrieves the book list from the server.
+						<li>New Book Link submits new book, the data is
+							sent to server using ngResource service, $resource (save action
+							method)</li>
+						<li>DEMO uses ng-view directive to render different views</li>
+						<li>ngRoute module is used to load different views. Controller 
+							and URL are configured for each view</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>

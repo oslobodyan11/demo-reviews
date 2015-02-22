@@ -1,0 +1,12 @@
+<div style="padding-top: 25px">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">Library content</h3>
+		</div>
+		<div class="panel-body">
+			<ul ng-repeat="book in booklist">
+				<li><a href="#reviews/books/{{book.id}}">{{book.name}} ({{book.author}})</a>&nbsp;&nbsp;&nbsp;{{book.numberOfComments}}&nbsp;Comments</li>
+			</ul>
+		</div>
+	</div>
+</div>
