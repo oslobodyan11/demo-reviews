@@ -1,1 +1,6 @@
 /target/
+/.settings/
+/eclipse-launch-profiles/
+/.classpath
+/nbactions.xml
+/.project
